@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+   <style>
+        /* Set system fonts for Lao text that are likely to be available on users' devices */
+        body {
+            font-family: 'Phetsarath OT', 'Phetsarath', 'Saysettha OT', 'Noto Sans Lao', 'Lao UI', 'Dhyana', 'DokChampa', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Apply the same font family to all form elements for consistency */
+        input, select, textarea, button, label, div, h1, h2, h3, h4, p, span {
+            font-family: 'Phetsarath OT', 'Phetsarath', 'Saysettha OT', 'Noto Sans Lao', 'Lao UI', 'Dhyana', 'DokChampa', sans-serif;
+        }
+
+        /* Ensure font size is large enough for readability */
+        body, input, select, textarea, button {
+            font-size: 16px;
+        }
+
+        /* Additional font weights to ensure correct display */
+        strong, b, h1, h2, h3, h4, .submit-button {
+            font-weight: bold;
+        }
+
+        /* Force browser to use the correct rendering for Lao text */
+        [lang="lo"] {
+            font-family: 'Phetsarath OT', 'Phetsarath', 'Saysettha OT', 'Noto Sans Lao', 'Lao UI', 'Dhyana', 'DokChampa', sans-serif !important;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+        }
+        h2 {
+            color: #1a73e8;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #444;
+        }
+        .form-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 10px;
+        }
+        .radio-option,
+        .checkbox-option {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+        .radio-option input,
+        .checkbox-option input {
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+        .other-option {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .other-option input[type="text"] {
+            margin-left: 10px;
+            width: 70%;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .note {
+            background-color: #e8f4fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        .submit-button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #0d47a1;
+        }
+        .date-input {
+            display: flex;
+            gap: 10px;
+        }
+        .date-input input {
+            width: 70px;
+        }
+    </style>
+
+
+
+
+
+
+<body>
+    <div class="pt-4"></div>
+<div class="container">
+
+    <form method="post" autocomplete="off" name="hello-sheet">
+        <div class="form-group">
+
+
+<body>
+        <div class="container">
+                <h1><p style="text-align: center"><p style="text-align: left"><p style="text-align: center">ແບບສອບຖາມການວິໄຈ: ການເຊື່ອມໂຍງລົດໄຟຟ້າກັບພະລັງງານທົດແທນ ແລະ ລະບົບ Grid ໃນລາວ</h1>
+
+                <div class="note">
+                        <strong>ໝາຍເຫດສໍາລັບຜູ້ປະກອບຂໍ້ມູນ</strong>:
+                        ແບບສອບຖາມນີ້ໃຊ້ສໍາລັບການເກັບຂໍ້ມູນຈາກຄົວເຮືອນທີ່ເຂົ້າຮ່ວມໃນການຄົ້ນຄວ້າກ່ຽວກັບການເຊື່ອມໂຍງລົດໄຟຟ້າ
+                        (EV) ກັບພະລັງງານທົດແທນໃນ ສປປ ລາວ. ກະລຸນາອ່ານຄໍາຖາມຢ່າງຊ້າໆ ແລະ
+                        ຊັດເຈນພ້ອມບັນທຶກຄໍາຕອບຂອງຜູ້ເຂົ້າຮ່ວມຢ່າງຖືກຕ້ອງ.
+                </div>
+
+                <form id="survey-form">
+                        <!-- 1. ຂໍ້ມູນທົ່ວໄປ -->
+                        <div class="form-section">
+                                <h2>1. ຂໍ້ມູນທົ່ວໄປ</h2>
+
+                                <div class="form-group">
+                                        <label for="surveyId" class="required">ລະຫັດແບບສອບຖາມ</label>
+                                        <input type="text" id="surveyId" name="surveyId" required>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="surveyDate" class="required">ວັນທີເກັບຂໍ້ມູນ</label>
+                                        <input type="date" id="surveyDate" name="surveyDate" required>
+                                        <style>
+                                                /* Style for date input to make it appear more integrated */
+                                                input[type="date"] {
+                                                        width: 100%;
+                                                        padding: 8px;
+                                                        border: 1px solid #ddd;
+                                                        border-radius: 4px;
+                                                        box-sizing: border-box;
+                                                        font-family: 'Noto Sans Lao', Arial, sans-serif;
+                                                }
+                                        </style>
+
+
+
+
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="surveyCollector" class="required">ຊື່ຜູ້ເກັບຂໍ້ມູນ</label>
+                                        <input type="text" id="surveyCollector" name="surveyCollector" required>
+                                </div>
+                        </div>
+
+                        <!-- 2. ຂໍ້ມູນສະຖານທີ່ -->
+                        <div class="form-section">
+                                <h2>2. ຂໍ້ມູນສະຖານທີ່</h2>
+
+                                <div class="form-group">
+                                        <label class="required">ເຂດພື້ນທີ່ (ໝາຍເອົາໜຶ່ງຂໍ້)</label>
+                                        <div class="radio-group">
+                                                <div class="radio-option">
+                                                        <input type="radio" id="area1" name="area" value="urban" required>
+                                                        <label for="area1">ຕົວເມືອງ (ນະຄອນຫຼວງວຽງຈັນ)</label>
+                                                </div>
+                                                <div class="radio-option">
+                                                        <input type="radio" id="area2" name="area" value="suburban">
+                                                        <label for="area2">ຮອບນອກຕົວເມືອງ (ແຂວງວຽງຈັນ)</label>
+                                                </div>
+                                                <div class="radio-option">
+                                                        <input type="radio" id="area3" name="area" value="rural">
+                                                        <label for="area3">ຊົນນະບົດທີ່ມີໄຟຟ້າຈາກລະບົບໄຟຟ້າຂະໜາດນ້ອຍ (ແຂວງຫຼວງພະບາງ)</label>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="village" class="required">ບ້ານ</label>
+                                        <input type="text" id="village" name="village" required>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="district" class="required">ເມືອງ</label>
+                                        <input type="text" id="district" name="district" required>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="province" class="required">ແຂວງ</label>
+                                        <input type="text" id="province" name="province" required>
+                                </div>
+                        </div>
+
+                        <!-- 3. ຂໍ້ມູນຜູ້ຕອບ -->
+                        <div class="form-section">
+                                <h2>3. ຂໍ້ມູນຜູ້ຕອບ</h2>
+
+                                <div class="form-group">
+                                        <label for="respondentName" class="required">ຊື່ຜູ້ຕອບ</label>
+                                        <input type="text" id="respondentName" name="respondentName" required>
+                                </div>
+
+                                <div class="form-group">
+                                        <label class="required">ເພດ</label>
+                                        <div class="radio-group">
+                                                <div class="radio-option">
+                                                        <input type="radio" id="gender1" name="gender" value="male" required>
+                                                        <label for="gender1">ຊາຍ</label>
+                                                </div>
+                                                <div class="radio-option">
+                                                        <input type="radio" id="gender2" name="gender" value="female">
+                                                        <label for="gender2">ຍິງ</label>
+                                                </div>
+                                                <div class="radio-option">
+                                                        <input type="radio" id="gender3" name="gender" value="other">
+                                                        <label for="gender3">ອື່ນໆ</label>
+                                                </div>
+                                        </div>
+                                        <div class="other-option">
+                                                <label for="genderOther">ລະບຸ:</label>
+                                                <input type="text" id="genderOther" name="genderOther">
+                                        </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <button type="submit" name="submit" value="Send message" class="btn btn-primary">บันทึก</button>
+</form>
+</div>
+<script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLwiFOp55ZJviiQDJYLjnQzp09RhyE7nOdUzmusBDq6sflLZVCIwu3rcjCu4-vWs_t/exec'
+                        const form = document.forms['hello-sheet']
+
+                        form.addEventListener('submit', e => {
+                            e.preventDefault()
+                            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => alert("บันทึกข้อมูลเรียบร้อยแล้ว.."))
+                                .catch(error => console.error('Error!', error.message))
+                        })
+                    </script>
+
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
